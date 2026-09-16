@@ -1,0 +1,16 @@
+package smart_story;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+public interface IRepository {
+    boolean saveData(String filePath, List<String> data);
+    List<String> loadData(String filePath);
+    boolean exists(String filePath);
+    boolean deleteData(String filePath);
+}
